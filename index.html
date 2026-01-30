@@ -14,8 +14,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -30,7 +29,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">SATORY <span class="text-gold">PROPERTIES</span></a>
+            <a class="navbar-brand" href="index.html">The Landing</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -74,7 +73,7 @@
             <button type="button" data-bs-target="#home" data-bs-slide-to="2"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('assets/images/Main Entry.png');">
+            <div class="carousel-item active" style="background-image: url('assets/images/Main Entry.webp');">
                 <div class="carousel-overlay">
                     <div class="container hero-content text-center">
                         <h2 class="mb-3">Welcome Home to The Landing</h2>
@@ -83,15 +82,15 @@
                         <p class="lead text-white-50 mb-5 mx-auto" style="max-width: 800px;">A freshly reimagined luxury
                             apartment community in the East End of Galveston—where modern living meets island
                             convenience.</p>
-                        <div class="d-flex justify-content-center gap-3">
-                            <a href="#welcome" class="btn btn-luxury btn-lg px-5">Explore Community</a>
-                            <a href="tel:+12814071886" class="btn btn-outline-light btn-lg px-5"><i
+                        <div class="hero-btns d-flex flex-column flex-sm-row justify-content-center gap-3">
+                            <a href="#welcome" class="btn btn-luxury btn-lg">Explore Community</a>
+                            <a href="tel:+12814071886" class="btn btn-outline-light btn-lg"><i
                                     class="fas fa-phone-alt me-2"></i>Call Now</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" style="background-image: url('assets/images/Living room.png');">
+            <div class="carousel-item" style="background-image: url('assets/images/Living room.webp');">
                 <div class="carousel-overlay">
                     <div class="container hero-content text-center">
                         <h2 class="mb-3">Luxury Reimagined</h2>
@@ -105,7 +104,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" style="background-image: url('assets/images/Pool front facing.png');">
+            <div class="carousel-item" style="background-image: url('assets/images/Pool front facing.webp');">
                 <div class="carousel-overlay">
                     <div class="container hero-content text-center">
                         <h2 class="mb-3">Resort-Style Living</h2>
@@ -163,12 +162,12 @@
                     </div>
                 </div>
                 <div class="col-lg-6 scroll-animate-right">
-                    <div class="position-relative">
-                        <img src="assets/images/Main Entry.png" class="img-fluid rounded shadow-lg"
+                    <div class="welcome-image-container">
+                        <div class="welcome-decoration"></div>
+                        <img src="assets/images/Main Entry.webp" class="img-fluid welcome-img-main"
                             alt="The Landing Entry">
-                        <div class="floating-badge bg-white p-4 shadow-lg rounded"
-                            style="position: absolute; bottom: -30px; right: -30px; max-width: 250px;">
-                            <p class="m-0 text-primary-dark fw-bold">"Designed for comfort, built for life."</p>
+                        <div class="welcome-badge-modern">
+                            <p class="fst-italic">"Designed for comfort, built for life."</p>
                         </div>
                     </div>
                 </div>
@@ -192,7 +191,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Bedroom.png" alt="Bedroom">
+                        <img src="assets/images/Bedroom.webp" alt="Bedroom">
                         <div class="gallery-card-body">
                             <h5>Bedroom</h5>
                             <p>Comfortable and spacious bedrooms</p>
@@ -201,7 +200,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Living room.png" alt="Living Room">
+                        <img src="assets/images/Living room.webp" alt="Living Room">
                         <div class="gallery-card-body">
                             <h5>Living Room</h5>
                             <p>Modern and elegant living spaces</p>
@@ -210,7 +209,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Kitchen 1.png" alt="Kitchen">
+                        <img src="assets/images/Kitchen 1.webp" alt="Kitchen">
                         <div class="gallery-card-body">
                             <h5>Kitchen</h5>
                             <p>Fully equipped modern kitchens</p>
@@ -219,7 +218,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Bathroom.png" alt="Bathroom">
+                        <img src="assets/images/Bathroom.webp" alt="Bathroom">
                         <div class="gallery-card-body">
                             <h5>Bathroom</h5>
                             <p>Luxurious bathroom amenities</p>
@@ -233,7 +232,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Side Building.png" alt="Exterior">
+                        <img src="assets/images/Side Building.webp" alt="Exterior">
                         <div class="gallery-card-body">
                             <h5>Building Exterior</h5>
                             <p>Beautiful architectural design</p>
@@ -242,7 +241,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Pool Grond floor.JPEG" alt="Pool">
+                        <img src="assets/images/Pool Grond floor.webp" alt="Pool">
                         <div class="gallery-card-body">
                             <h5>Swimming Pool</h5>
                             <p>Refreshing pool area for relaxation</p>
@@ -251,7 +250,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Courtyard.png" alt="Courtyard">
+                        <img src="assets/images/Courtyard.webp" alt="Courtyard">
                         <div class="gallery-card-body">
                             <h5>Courtyard</h5>
                             <p>Peaceful outdoor gathering space</p>
@@ -260,7 +259,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Dogpark.png" alt="Dog Park">
+                        <img src="assets/images/Dogpark.webp" alt="Dog Park">
                         <div class="gallery-card-body">
                             <h5>Dog Park</h5>
                             <p>Pet-friendly recreation area</p>
@@ -270,7 +269,7 @@
 
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Parking on rear.png" alt="Parking">
+                        <img src="assets/images/Parking on rear.webp" alt="Parking">
                         <div class="gallery-card-body">
                             <h5>Parking Area</h5>
                             <p>Convenient on-site parking</p>
@@ -279,7 +278,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Laundry Room.png" alt="Laundry">
+                        <img src="assets/images/Laundry Room.webp" alt="Laundry">
                         <div class="gallery-card-body">
                             <h5>Laundry Facility</h5>
                             <p>Modern washers and dryers</p>
@@ -288,7 +287,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Gaming Room.png" alt="Gaming Room">
+                        <img src="assets/images/Gaming Room.webp" alt="Gaming Room">
                         <div class="gallery-card-body">
                             <h5>Gaming Room</h5>
                             <p>Entertainment and recreation space</p>
@@ -297,7 +296,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Community kitchen.png" alt="Community Kitchen">
+                        <img src="assets/images/Community kitchen.webp" alt="Community Kitchen">
                         <div class="gallery-card-body">
                             <h5>Community Kitchen</h5>
                             <p>Shared cooking and dining area</p>
@@ -307,7 +306,7 @@
 
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Gym.png" alt="Gym">
+                        <img src="assets/images/Gym.webp" alt="Gym">
                         <div class="gallery-card-body">
                             <h5>Fitness Center</h5>
                             <p>Fully equipped workout facility</p>
@@ -316,7 +315,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Studyroom.png" alt="Study Rooms">
+                        <img src="assets/images/Studyroom.webp" alt="Study Rooms">
                         <div class="gallery-card-body">
                             <h5>Study Rooms</h5>
                             <p>Quiet spaces for work and study</p>
@@ -325,7 +324,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="gallery-card scroll-animate">
-                        <img src="assets/images/Lobby.png" alt="Lobby">
+                        <img src="assets/images/Lobby.webp" alt="Lobby">
                         <div class="gallery-card-body">
                             <h5>Lobby</h5>
                             <p>Welcoming entrance and reception</p>
@@ -344,9 +343,8 @@
                 <p>928 Ferry Road, Galveston, TX</p>
             </div>
             <div class="map-container" style="height: 500px; position: relative;">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.669042220464!2d-94.77457892361666!3d29.330833275298132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863f9e5c46897107%3A0x628373b984812f8!2s928%20Ferry%20Rd%2C%20Galveston%2C%20TX%2077550!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1NgFVSg9fIPTO98UrogOWEra_kYqkcw8" width="100%"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -366,7 +364,8 @@
                         home to a quiet, comfortable, and reliable place to recharge.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/images/Kitchen 2.png" class="img-fluid rounded shadow w-100" alt="Medical Housing">
+                    <img src="assets/images/Kitchen 2.webp" class="img-fluid rounded shadow w-100"
+                        alt="Medical Housing">
                 </div>
             </div>
         </div>
@@ -385,7 +384,7 @@
                         that local knowledge in mind.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/images/Lobby.png" class="img-fluid rounded shadow w-100" alt="Management Team">
+                    <img src="assets/images/Lobby.webp" class="img-fluid rounded shadow w-100" alt="Management Team">
                 </div>
             </div>
         </div>
@@ -403,7 +402,7 @@
                         outdoor spaces on site, your pet has room to play while you enjoy island living.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/images/Dogpark.png" class="img-fluid rounded shadow w-100" alt="Pet Friendly">
+                    <img src="assets/images/Dogpark.webp" class="img-fluid rounded shadow w-100" alt="Pet Friendly">
                 </div>
             </div>
         </div>
@@ -421,7 +420,7 @@
                         spaces, so you—and your guests—always know where to park.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/images/Parking side view 2.png" class="img-fluid rounded shadow w-100"
+                    <img src="assets/images/Parking side view 2.webp" class="img-fluid rounded shadow w-100"
                         alt="Parking">
                 </div>
             </div>
@@ -441,7 +440,7 @@
                         study rooms, pool, dog park, laundry rooms, and inviting outdoor areas.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/images/Pool front facing.png" class="img-fluid rounded shadow w-100"
+                    <img src="assets/images/Pool front facing.webp" class="img-fluid rounded shadow w-100"
                         alt="Amenities">
                 </div>
             </div>
@@ -476,7 +475,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="card property-card h-100 scroll-animate">
                         <div class="property-img-wrapper">
-                            <img src="assets/images/Bedroom.png" alt="Unit 101">
+                            <img src="assets/images/Bedroom.webp" alt="Unit 101">
                             <div class="availability-badge">Available</div>
                         </div>
                         <div class="card-body">
@@ -497,7 +496,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="card property-card h-100 scroll-animate">
                         <div class="property-img-wrapper">
-                            <img src="assets/images/Living room.png" alt="Unit 102">
+                            <img src="assets/images/Living room.webp" alt="Unit 102">
                             <div class="availability-badge">Available</div>
                         </div>
                         <div class="card-body">
@@ -518,7 +517,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="card property-card h-100 scroll-animate">
                         <div class="property-img-wrapper">
-                            <img src="assets/images/Kitchen 1.png" alt="Unit 201">
+                            <img src="assets/images/Kitchen 1.webp" alt="Unit 201">
                             <div class="availability-badge unavailable-badge">Rented</div>
                         </div>
                         <div class="card-body">
@@ -538,7 +537,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="card property-card h-100 scroll-animate">
                         <div class="property-img-wrapper">
-                            <img src="assets/images/Bathroom 2.png" alt="Unit 202">
+                            <img src="assets/images/Bathroom 2.webp" alt="Unit 202">
                             <div class="availability-badge">Available</div>
                         </div>
                         <div class="card-body">
@@ -572,7 +571,7 @@
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="card property-card h-100 scroll-animate">
                             <div class="property-img-wrapper">
-                                <img src="assets/images/Main Entry.png" alt="Seawall Condos">
+                                <img src="assets/images/Main Entry.webp" alt="Seawall Condos">
                                 <div class="availability-badge">Available</div>
                             </div>
                             <div class="card-body p-3">
@@ -590,7 +589,7 @@
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="card property-card h-100 scroll-animate">
                             <div class="property-img-wrapper">
-                                <img src="assets/images/Side Building.png" alt="Seawall Condos">
+                                <img src="assets/images/Side Building.webp" alt="Seawall Condos">
                                 <div class="availability-badge unavailable-badge">Rented</div>
                             </div>
                             <div class="card-body p-3">
@@ -608,7 +607,7 @@
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="card property-card h-100 scroll-animate">
                             <div class="property-img-wrapper">
-                                <img src="assets/images/Bedroom.png" alt="Strand Loft">
+                                <img src="assets/images/Bedroom.webp" alt="Strand Loft">
                                 <div class="availability-badge">Available</div>
                             </div>
                             <div class="card-body p-3">
@@ -626,7 +625,7 @@
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="card property-card h-100 scroll-animate">
                             <div class="property-img-wrapper">
-                                <img src="assets/images/Kitchen 2.png" alt="Strand Loft">
+                                <img src="assets/images/Kitchen 2.webp" alt="Strand Loft">
                                 <div class="availability-badge">Available</div>
                             </div>
                             <div class="card-body p-3">
@@ -644,7 +643,7 @@
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="card property-card h-100 scroll-animate">
                             <div class="property-img-wrapper">
-                                <img src="assets/images/Living room.png" alt="Beach House">
+                                <img src="assets/images/Living room.webp" alt="Beach House">
                                 <div class="availability-badge unavailable-badge">Rented</div>
                             </div>
                             <div class="card-body p-3">
@@ -662,7 +661,7 @@
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="card property-card h-100 scroll-animate">
                             <div class="property-img-wrapper">
-                                <img src="assets/images/Bathroom.png" alt="Beach House">
+                                <img src="assets/images/Bathroom.webp" alt="Beach House">
                                 <div class="availability-badge">Available</div>
                             </div>
                             <div class="card-body p-3">
@@ -680,7 +679,7 @@
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="card property-card h-100 scroll-animate">
                             <div class="property-img-wrapper">
-                                <img src="assets/images/Pool Grond floor.JPEG" alt="Midtown Place">
+                                <img src="assets/images/Pool Grond floor.webp" alt="Midtown Place">
                                 <div class="availability-badge">Available</div>
                             </div>
                             <div class="card-body p-3">
@@ -698,7 +697,7 @@
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="card property-card h-100 scroll-animate">
                             <div class="property-img-wrapper">
-                                <img src="assets/images/Courtyard.png" alt="Midtown Place">
+                                <img src="assets/images/Courtyard.webp" alt="Midtown Place">
                                 <div class="availability-badge">Available</div>
                             </div>
                             <div class="card-body p-3">
