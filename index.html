@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Satory Property Management - Luxury Apartments & Corporate Housing in Galveston, TX">
+    <title>Satory Property Management | Luxury Living in Galveston</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SATORY <span class="text-gold">PROPERTIES</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="galveston.html">Why Galveston</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="housing.html">Housing Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apartments">Available Units</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item me-3 d-none d-lg-block">
+                        <a href="tel:+12814071886" class="nav-link fw-bold text-gold">
+                            <i class="fas fa-phone-alt me-1"></i> +1 281 407 1886
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <button class="contact-btn" onclick="toggleContactSidebar()">
+                            Contact Info
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <header id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#home" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#home" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('assets/images/Main Entry.png');">
+                <div class="carousel-overlay">
+                    <div class="container hero-content text-center">
+                        <h2 class="mb-3">Welcome Home to The Landing</h2>
+                        <h1 class="display-3 mb-4">Experience Galveston <br><span class="text-gold">Like Never
+                                Before</span></h1>
+                        <p class="lead text-white-50 mb-5 mx-auto" style="max-width: 800px;">A freshly reimagined luxury
+                            apartment community in the East End of Galveston—where modern living meets island
+                            convenience.</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#welcome" class="btn btn-luxury btn-lg px-5">Explore Community</a>
+                            <a href="tel:+12814071886" class="btn btn-outline-light btn-lg px-5"><i
+                                    class="fas fa-phone-alt me-2"></i>Call Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('assets/images/Living room.png');">
+                <div class="carousel-overlay">
+                    <div class="container hero-content text-center">
+                        <h2 class="mb-3">Luxury Reimagined</h2>
+                        <h1 class="display-3 mb-4">Your Perfect <br><span class="text-gold">Home Away From Home</span>
+                        </h1>
+                        <p class="lead text-white-50 mb-5 mx-auto" style="max-width: 800px;">Every apartment has been
+                            completely renovated in 2026, featuring high-end appliances and modern finishes.</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#apartments" class="btn btn-luxury btn-lg px-5">View Availability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('assets/images/Pool front facing.png');">
+                <div class="carousel-overlay">
+                    <div class="container hero-content text-center">
+                        <h2 class="mb-3">Resort-Style Living</h2>
+                        <h1 class="display-3 mb-4">Unmatched <br><span class="text-gold">Community Amenities</span></h1>
+                        <p class="lead text-white-50 mb-5 mx-auto" style="max-width: 800px;">Enjoy our refreshing pool,
+                            fully equipped gym, and a dedicated dog park for your furry friends.</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#gallery" class="btn btn-luxury btn-lg px-5">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 scroll-animate-left">
+                    <h2 class="section-title mb-4" style="text-align: left;">Welcome Home to <span class="text-gold">The
+                            Landing</span></h2>
+                    <p class="lead mb-4">Welcome to The Landing, a freshly reimagined luxury apartment community in the
+                        East End of Galveston—where modern living meets island convenience. Just steps away or a short
+                        bike ride from UTMB, downtown Galveston, and local hot spots, The Landing puts everything you
+                        need right outside your door.</p>
+                    <p class="mb-4">The Landing offers beautifully designed one-bedroom apartments paired with
+                        resort-style community amenities. Enjoy time with friends in the clubhouse, stay active in the
+                        fully equipped gym, unwind in the game room, or focus in the study rooms. Outside, you’ll find a
+                        refreshing pool, welcoming outdoor spaces, and a dedicated dog park—perfect for both residents
+                        and their four-legged companions.</p>
+                    <p class="mb-4">Every apartment at The Landing has been completely renovated in 2026, featuring
+                        high-end appliances, modern finishes, and thoughtful upgrades throughout. From stylish interiors
+                        to inviting shared spaces, The Landing offers a comfortable, contemporary lifestyle in one of
+                        Galveston’s most desirable neighborhoods.</p>
+                    <div class="d-flex gap-4 mt-5">
+                        <div class="text-center">
+                            <h4 class="text-gold mb-1">2026</h4>
+                            <p class="small text-muted text-uppercase">Renovated</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-gold mb-1">100%</h4>
+                            <p class="small text-muted text-uppercase">Modern</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-gold mb-1">24/7</h4>
+                            <p class="small text-muted text-uppercase">Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 scroll-animate-right">
+                    <div class="position-relative">
+                        <img src="assets/images/Main Entry.png" class="img-fluid rounded shadow-lg"
+                            alt="The Landing Entry">
+                        <div class="floating-badge bg-white p-4 shadow-lg rounded"
+                            style="position: absolute; bottom: -30px; right: -30px; max-width: 250px;">
+                            <p class="m-0 text-primary-dark fw-bold">"Designed for comfort, built for life."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanded Gallery Section -->
+    <section id="gallery" class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5 scroll-animate">
+                <h2>Our Property</h2>
+                <p class="text-muted">A Glimpse into Luxury Living</p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="row g-4">
+                <!-- Apartments -->
+                <div class="col-12">
+                    <h3 class="gallery-section-title scroll-animate-left">Apartment Interiors</h3>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Bedroom.png" alt="Bedroom">
+                        <div class="gallery-card-body">
+                            <h5>Bedroom</h5>
+                            <p>Comfortable and spacious bedrooms</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Living room.png" alt="Living Room">
+                        <div class="gallery-card-body">
+                            <h5>Living Room</h5>
+                            <p>Modern and elegant living spaces</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Kitchen 1.png" alt="Kitchen">
+                        <div class="gallery-card-body">
+                            <h5>Kitchen</h5>
+                            <p>Fully equipped modern kitchens</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Bathroom.png" alt="Bathroom">
+                        <div class="gallery-card-body">
+                            <h5>Bathroom</h5>
+                            <p>Luxurious bathroom amenities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Amenities -->
+                <div class="col-12">
+                    <h3 class="gallery-section-title scroll-animate-left">Community Amenities</h3>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Side Building.png" alt="Exterior">
+                        <div class="gallery-card-body">
+                            <h5>Building Exterior</h5>
+                            <p>Beautiful architectural design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Pool Grond floor.JPEG" alt="Pool">
+                        <div class="gallery-card-body">
+                            <h5>Swimming Pool</h5>
+                            <p>Refreshing pool area for relaxation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Courtyard.png" alt="Courtyard">
+                        <div class="gallery-card-body">
+                            <h5>Courtyard</h5>
+                            <p>Peaceful outdoor gathering space</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Dogpark.png" alt="Dog Park">
+                        <div class="gallery-card-body">
+                            <h5>Dog Park</h5>
+                            <p>Pet-friendly recreation area</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Parking on rear.png" alt="Parking">
+                        <div class="gallery-card-body">
+                            <h5>Parking Area</h5>
+                            <p>Convenient on-site parking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Laundry Room.png" alt="Laundry">
+                        <div class="gallery-card-body">
+                            <h5>Laundry Facility</h5>
+                            <p>Modern washers and dryers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Gaming Room.png" alt="Gaming Room">
+                        <div class="gallery-card-body">
+                            <h5>Gaming Room</h5>
+                            <p>Entertainment and recreation space</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Community kitchen.png" alt="Community Kitchen">
+                        <div class="gallery-card-body">
+                            <h5>Community Kitchen</h5>
+                            <p>Shared cooking and dining area</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Gym.png" alt="Gym">
+                        <div class="gallery-card-body">
+                            <h5>Fitness Center</h5>
+                            <p>Fully equipped workout facility</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Studyroom.png" alt="Study Rooms">
+                        <div class="gallery-card-body">
+                            <h5>Study Rooms</h5>
+                            <p>Quiet spaces for work and study</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="gallery-card scroll-animate">
+                        <img src="assets/images/Lobby.png" alt="Lobby">
+                        <div class="gallery-card-body">
+                            <h5>Lobby</h5>
+                            <p>Welcoming entrance and reception</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section-padding bg-light pb-0">
+        <div class="container mb-5">
+            <div class="text-center mb-4">
+                <h2>Our Location</h2>
+                <p>928 Ferry Road, Galveston, TX</p>
+            </div>
+            <div class="map-container" style="height: 500px; position: relative;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.669042220464!2d-94.77457892361666!3d29.330833275298132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863f9e5c46897107%3A0x628373b984812f8!2s928%20Ferry%20Rd%2C%20Galveston%2C%20TX%2077550!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 Sections (Text + Picture) -->
+
+    <!-- Section 1: Medical Housing -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="mb-3">A Trusted Home for Medical Professionals</h3>
+                    <p class="lead text-muted">A preferred medical housing partner.</p>
+                    <p>The Landing is proud to be a preferred housing option for medical staff and healthcare
+                        professionals working at UTMB and nearby facilities. With a long history of serving this
+                        community, we understand the demands of shift work, long hours, and the importance of coming
+                        home to a quiet, comfortable, and reliable place to recharge.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/Kitchen 2.png" class="img-fluid rounded shadow w-100" alt="Medical Housing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Local Company -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="mb-3">Local, Responsive, and Always Here</h3>
+                    <p class="lead text-muted">Local Management & Maintenance team available 24/7.</p>
+                    <p>The Landing is owned and managed by a local Galveston-based team that lives and works on the
+                        island. We understand the unique aspects of the Galveston community—from coastal weather and
+                        seasonal conditions to the day-to-day rhythms of island life—and we manage our properties with
+                        that local knowledge in mind.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/Lobby.png" class="img-fluid rounded shadow w-100" alt="Management Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Pet Friendly -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="mb-3">Pet-Friendly Living</h3>
+                    <p class="lead text-muted">We know pets are family.</p>
+                    <p>At The Landing, we know pets are family. We’re proud to offer a pet-friendly community and
+                        welcome residents to enjoy their home with their furry companions. With a dedicated dog park and
+                        outdoor spaces on site, your pet has room to play while you enjoy island living.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/Dogpark.png" class="img-fluid rounded shadow w-100" alt="Pet Friendly">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Parking -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="mb-3">Convenient Parking Options</h3>
+                    <p class="lead text-muted">Hassle-free parking for all residents.</p>
+                    <p>The Landing offers a variety of on-site parking options designed to make daily life easier.
+                        Residents can take advantage of covered parking, uncovered parking, and designated visitor
+                        spaces, so you—and your guests—always know where to park.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/Parking side view 2.png" class="img-fluid rounded shadow w-100"
+                        alt="Parking">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Amenities -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="mb-3">Amenities Designed for Everyday Living</h3>
+                    <p class="lead text-muted">Life at The Landing extends beyond your apartment.</p>
+                    <p>Our community amenities are thoughtfully designed to enhance your daily routine—whether that
+                        means starting your morning with a workout, focusing in a quiet study space, or unwinding
+                        outdoors after a long day. Residents enjoy access to a fully equipped gym, clubhouse, game room,
+                        study rooms, pool, dog park, laundry rooms, and inviting outdoor areas.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/Pool front facing.png" class="img-fluid rounded shadow w-100"
+                        alt="Amenities">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Info Section inside Page Body -->
+    <section class="py-5 bg-primary-dark text-white">
+        <div class="container text-center">
+            <h3>Satory Property Management</h3>
+            <p class="mb-1">622 Kempner Street, Suite 236</p>
+            <p class="mb-4">Galveston, TX 77550</p>
+
+            <h5 class="text-gold">Opening Times</h5>
+            <p class="mb-0">Monday – Friday: 8 AM – 5 PM</p>
+            <p class="mb-0">Saturday: 10 AM – 5 PM</p>
+            <p class="mb-3">Sunday: Closed</p>
+            <p class="small text-white-50">Showings outside hours available by appointment</p>
+        </div>
+    </section>
+
+    <!-- Available Apartments Section (928 Ferry Road) -->
+    <section id="apartments" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 scroll-animate">
+                <h2 class="section-title">Available Apartments</h2>
+                <p class="section-subtitle">928 Ferry Road, Galveston</p>
+            </div>
+
+            <!-- Main Property Cards -->
+            <div class="row g-4 apartments-grid-main">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card property-card h-100 scroll-animate">
+                        <div class="property-img-wrapper">
+                            <img src="assets/images/Bedroom.png" alt="Unit 101">
+                            <div class="availability-badge">Available</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Unit 101</h5>
+                            <p class="text-muted">928 Ferry Road</p>
+                            <p class="price">$1,200<span style="font-size: 0.8rem; color: #6c757d;">/month</span></p>
+                            <p class="details mb-3">
+                                <span class="detail-item"><i class="fas fa-bed"></i>1 Bed</span>
+                                <span class="detail-item"><i class="fas fa-bath"></i>1 Bath</span>
+                            </p>
+                            <a href="https://www.hemlane.com/listings/928-ferry-rd-galveston-tx-77550-usa/..."
+                                target="_blank" class="btn btn-luxury w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unit 102 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card property-card h-100 scroll-animate">
+                        <div class="property-img-wrapper">
+                            <img src="assets/images/Living room.png" alt="Unit 102">
+                            <div class="availability-badge">Available</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Unit 102</h5>
+                            <p class="text-muted">928 Ferry Road</p>
+                            <p class="price">$1,250<span style="font-size: 0.8rem; color: #6c757d;">/month</span></p>
+                            <p class="details mb-3">
+                                <span class="detail-item"><i class="fas fa-bed"></i>1 Bed</span>
+                                <span class="detail-item"><i class="fas fa-bath"></i>1 Bath</span>
+                            </p>
+                            <a href="https://www.hemlane.com/listings/..." target="_blank"
+                                class="btn btn-luxury w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unit 201 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card property-card h-100 scroll-animate">
+                        <div class="property-img-wrapper">
+                            <img src="assets/images/Kitchen 1.png" alt="Unit 201">
+                            <div class="availability-badge unavailable-badge">Rented</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Unit 201</h5>
+                            <p class="text-muted">928 Ferry Road</p>
+                            <p class="price">$1,300<span style="font-size: 0.8rem; color: #6c757d;">/month</span></p>
+                            <p class="details mb-3">
+                                <span class="detail-item"><i class="fas fa-bed"></i>1 Bed</span>
+                                <span class="detail-item"><i class="fas fa-bath"></i>1 Bath</span>
+                            </p>
+                            <a href="#" class="btn btn-outline-secondary w-100 disabled">Rented</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unit 202 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card property-card h-100 scroll-animate">
+                        <div class="property-img-wrapper">
+                            <img src="assets/images/Bathroom 2.png" alt="Unit 202">
+                            <div class="availability-badge">Available</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Unit 202</h5>
+                            <p class="text-muted">928 Ferry Road</p>
+                            <p class="price">$1,350<span style="font-size: 0.8rem; color: #6c757d;">/month</span></p>
+                            <p class="details mb-3">
+                                <span class="detail-item"><i class="fas fa-bed"></i>1 Bed</span>
+                                <span class="detail-item"><i class="fas fa-bath"></i>1 Bath</span>
+                            </p>
+                            <a href="https://www.hemlane.com/listings/928-ferry-rd-galveston-tx-77550-usa/86d6f28a-7ec3-44f2-9861-f09c855a02e6"
+                                target="_blank" class="btn btn-luxury w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScY_y6m_Q7g_Q7g_Q7g_Q7g_Q7g_Q7g_Q7g/viewform"
+                    target="_blank" class="btn btn-outline-luxury px-5">
+                    <i class="fas fa-clock me-2"></i>Unit Not Available? Join Waitlist
+                </a>
+            </div>
+
+            <!-- Secondary Properties -->
+            <div class="apartments-grid-secondary">
+                <h3 class="scroll-animate-left">Other Available Properties in Galveston</h3>
+
+                <div class="row g-3 mb-5">
+                    <!-- Property 1 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card property-card h-100 scroll-animate">
+                            <div class="property-img-wrapper">
+                                <img src="assets/images/Main Entry.png" alt="Seawall Condos">
+                                <div class="availability-badge">Available</div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title">Seawall Condos #1</h6>
+                                <p class="text-muted">Galveston Seawall</p>
+                                <p class="price" style="font-size: 1.1rem;">$1,100<span
+                                        style="font-size: 0.7rem; color: #6c757d;">/mo</span></p>
+                                <p class="details mb-2" style="font-size: 0.8rem;">1 Bed • 1 Bath</p>
+                                <a href="#" class="btn btn-luxury btn-sm w-100">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 2 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card property-card h-100 scroll-animate">
+                            <div class="property-img-wrapper">
+                                <img src="assets/images/Side Building.png" alt="Seawall Condos">
+                                <div class="availability-badge unavailable-badge">Rented</div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title">Seawall Condos #2</h6>
+                                <p class="text-muted">Galveston Seawall</p>
+                                <p class="price" style="font-size: 1.1rem;">$1,150<span
+                                        style="font-size: 0.7rem; color: #6c757d;">/mo</span></p>
+                                <p class="details mb-2" style="font-size: 0.8rem;">1 Bed • 1 Bath</p>
+                                <a href="#" class="btn btn-outline-secondary btn-sm w-100 disabled">Rented</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 3 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card property-card h-100 scroll-animate">
+                            <div class="property-img-wrapper">
+                                <img src="assets/images/Bedroom.png" alt="Strand Loft">
+                                <div class="availability-badge">Available</div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title">Strand Loft A</h6>
+                                <p class="text-muted">Downtown</p>
+                                <p class="price" style="font-size: 1.1rem;">$1,800<span
+                                        style="font-size: 0.7rem; color: #6c757d;">/mo</span></p>
+                                <p class="details mb-2" style="font-size: 0.8rem;">2 Bed • 2 Bath</p>
+                                <a href="#" class="btn btn-luxury btn-sm w-100">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card property-card h-100 scroll-animate">
+                            <div class="property-img-wrapper">
+                                <img src="assets/images/Kitchen 2.png" alt="Strand Loft">
+                                <div class="availability-badge">Available</div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title">Strand Loft B</h6>
+                                <p class="text-muted">Downtown</p>
+                                <p class="price" style="font-size: 1.1rem;">$1,900<span
+                                        style="font-size: 0.7rem; color: #6c757d;">/mo</span></p>
+                                <p class="details mb-2" style="font-size: 0.8rem;">2 Bed • 2 Bath</p>
+                                <a href="#" class="btn btn-luxury btn-sm w-100">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 5 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card property-card h-100 scroll-animate">
+                            <div class="property-img-wrapper">
+                                <img src="assets/images/Living room.png" alt="Beach House">
+                                <div class="availability-badge unavailable-badge">Rented</div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title">Beach House A</h6>
+                                <p class="text-muted">West End</p>
+                                <p class="price" style="font-size: 1.1rem;">$2,200<span
+                                        style="font-size: 0.7rem; color: #6c757d;">/mo</span></p>
+                                <p class="details mb-2" style="font-size: 0.8rem;">3 Bed • 2 Bath</p>
+                                <a href="#" class="btn btn-outline-secondary btn-sm w-100 disabled">Rented</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 6 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card property-card h-100 scroll-animate">
+                            <div class="property-img-wrapper">
+                                <img src="assets/images/Bathroom.png" alt="Beach House">
+                                <div class="availability-badge">Available</div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title">Beach House B</h6>
+                                <p class="text-muted">West End</p>
+                                <p class="price" style="font-size: 1.1rem;">$2,100<span
+                                        style="font-size: 0.7rem; color: #6c757d;">/mo</span></p>
+                                <p class="details mb-2" style="font-size: 0.8rem;">3 Bed • 2 Bath</p>
+                                <a href="#" class="btn btn-luxury btn-sm w-100">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 7 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card property-card h-100 scroll-animate">
+                            <div class="property-img-wrapper">
+                                <img src="assets/images/Pool Grond floor.JPEG" alt="Midtown Place">
+                                <div class="availability-badge">Available</div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title">Midtown Place A</h6>
+                                <p class="text-muted">Midtown</p>
+                                <p class="price" style="font-size: 1.1rem;">$1,400<span
+                                        style="font-size: 0.7rem; color: #6c757d;">/mo</span></p>
+                                <p class="details mb-2" style="font-size: 0.8rem;">2 Bed • 1 Bath</p>
+                                <a href="#" class="btn btn-luxury btn-sm w-100">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property 8 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card property-card h-100 scroll-animate">
+                            <div class="property-img-wrapper">
+                                <img src="assets/images/Courtyard.png" alt="Midtown Place">
+                                <div class="availability-badge">Available</div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title">Midtown Place B</h6>
+                                <p class="text-muted">Midtown</p>
+                                <p class="price" style="font-size: 1.1rem;">$1,450<span
+                                        style="font-size: 0.7rem; color: #6c757d;">/mo</span></p>
+                                <p class="details mb-2" style="font-size: 0.8rem;">2 Bed • 1 Bath</p>
+                                <a href="#" class="btn btn-luxury btn-sm w-100">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScY_y6m_Q7g_Q7g_Q7g_Q7g_Q7g_Q7g_Q7g/viewform"
+                        target="_blank" class="btn btn-luxury btn-lg">
+                        <i class="fas fa-list-ul me-2"></i>Join General Waitlist
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding pt-0">
+        <div class="container">
+            <div class="text-center mb-5 scroll-animate">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Reach out to us for any questions or to schedule a tour.</p>
+            </div>
+
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-8 scroll-animate-left">
+                    <div class="card border-0 shadow-lg" style="border-radius: 20px;">
+                        <div class="card-body p-5">
+                            <h3 class="mb-4">Send us a Message</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <label class="form-label">Full Name *</label>
+                                        <input type="text" class="form-control" placeholder="Enter your full name"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" placeholder="email@example.com"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" placeholder="+1 (___) ___-____" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Desired Move-in Date</label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">How can we help? *</label>
+                                        <textarea class="form-control" rows="4"
+                                            placeholder="Tell us about your housing needs..." required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                            <label class="form-check-label small text-muted" for="termsCheck">
+                                                I agree to receive communications from Satory Properties. We will follow
+                                                up with you shortly.
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-luxury btn-lg w-100">
+                                            <i class="fas fa-paper-plane me-2"></i>Send Inquiry
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 scroll-animate-right">
+                    <div class="row g-4">
+                        <!-- Phone -->
+                        <div class="col-12">
+                            <div class="contact-info-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Phone</h5>
+                                    <a href="tel:+12814071886">+1 281 407 1886</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12">
+                            <div class="contact-info-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Email</h5>
+                                    <a href="mailto:Tohmeprop@gmail.com">Tohmeprop@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="col-12">
+                            <div class="contact-info-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Office Address</h5>
+                                    <span>622 Kempner Street, Suite 236<br>Galveston, TX 77550</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Office Hours -->
+                        <div class="col-12">
+                            <div class="contact-info-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h5>Office Hours</h5>
+                                    <span>Mon-Fri: 8 AM - 5 PM<br>Saturday: 10 AM - 5 PM<br>Sunday:
+                                        Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Sidebar -->
+    <div class="contact-sidebar-overlay" onclick="toggleContactSidebar()"></div>
+    <div class="contact-sidebar" id="contactSidebar">
+        <div class="sidebar-header">
+            <h5>Get in Touch</h5>
+            <p>We're here to help you find your perfect home in Galveston.</p>
+            <button class="sidebar-close-btn" onclick="toggleContactSidebar()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="sidebar-content">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Phone</h6>
+                    <a href="tel:+12814071886">+1 281 407 1886</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Email</h6>
+                    <a href="mailto:Tohmeprop@gmail.com">Tohmeprop@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Address</h6>
+                    <span>622 Kempner Street, Suite 236<br>Galveston, TX 77550</span>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Office Hours</h6>
+                    <span>Mon-Fri: 8 AM - 5 PM<br>Saturday: 10 AM - 5 PM<br>Sunday: Closed</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-actions">
+            <a href="tel:+12814071886" class="btn btn-luxury w-100">
+                <i class="fas fa-phone me-2"></i> Call Now
+            </a>
+            <a href="contact.html" class="btn btn-outline-secondary w-100">
+                <i class="fas fa-envelope me-2"></i> Send Message
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pe-lg-5">
+                        <h5 class="mb-4">Satory Properties</h5>
+                        <p class="mb-4">Redefining luxury property management in Galveston. We combine modern aesthetics
+                            with personalized service to create exceptional living experiences.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-link-group">
+                        <li><a href="galveston.html"><i class="fas fa-chevron-right"></i>Why Galveston</a></li>
+                        <li><a href="housing.html"><i class="fas fa-chevron-right"></i>Housing Options</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Office Address</h5>
+                    <ul class="footer-link-group">
+                        <li>
+                            <p class="m-0"><i class="fas fa-map-marker-alt"></i> 622 Kempner Street, Suite 236</p>
+                            <p class="ms-4 text-white-50">Galveston, TX 77550</p>
+                        </li>
+                        <li>
+                            <p class="m-0"><i class="fas fa-clock"></i> Mon - Fri: 8AM - 5PM</p>
+                            <p class="ms-4 text-white-50">Sat: 10AM - 5PM</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Get in Touch</h5>
+                    <ul class="footer-link-group">
+                        <li>
+                            <a href="tel:+12814071886" class="d-flex align-items-center mb-3">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+1 281 407 1886</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:Tohmeprop@gmail.com" class="d-flex align-items-center">
+                                <i class="fas fa-envelope"></i>
+                                <span>Tohmeprop@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="m-0">&copy; 2026 Satory Property Management. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-legal-links text-white-50">
+                            <a href="legal.html" class="ms-3">Privacy Policy</a>
+                            <span class="mx-2">|</span>
+                            <a href="legal.html">Disclaimer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Satory Property Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SATORY <span class="text-gold">PROPERTIES</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="galveston.html">Why Galveston</a></li>
+                    <li class="nav-item"><a class="nav-link" href="housing.html">Housing Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#apartments">Available Units</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+                    <li class="nav-item me-3 d-none d-lg-block">
+                        <a href="tel:+12814071886" class="nav-link fw-bold text-gold">
+                            <i class="fas fa-phone-alt me-1"></i> +1 281 407 1886
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <button class="contact-btn" onclick="toggleContactSidebar()">
+                            Contact Info
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary-dark text-white text-center pb-4" style="padding-top: 100px;">
+        <div class="container py-4">
+            <h1 class="display-5 mb-3">Frequently Asked Questions</h1>
+            <p class="lead text-light mb-0">Find answers to all your questions about living with Satory Properties.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <!-- Search Filter -->
+                    <div class="mb-4">
+                        <div class="position-relative">
+                            <i class="fas fa-search position-absolute"
+                                style="left: 15px; top: 50%; transform: translateY(-50%); color: #6c757d;"></i>
+                            <input type="text" id="faqSearch" class="form-control faq-search ps-5"
+                                placeholder="Search frequently asked questions...">
+                        </div>
+                    </div>
+
+                    <div class="accordion" id="faqAccordion">
+
+                        <!-- Booking & General Info -->
+                        <div class="faq-category">
+                            <h3>General Information & Booking</h3>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q1">Where is the property
+                                    located?</button></h2>
+                            <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">We are conveniently located at 928 Ferry Road, Galveston, TX
+                                    77550, just minutes from the UTMB campus and downtown.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q2">What types of apartments are
+                                    available (studio, 1BR, 2BR)?</button></h2>
+                            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Our community features modern 1-bedroom / 1-bath apartments,
+                                    including select larger layouts. Certain one-bedroom units can be arranged for
+                                    shared living, making them ideal for roommates looking to balance comfort and
+                                    affordability.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q3">Is the property newly built or
+                                    recently renovated?</button></h2>
+                            <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">The Landing was completely reimagined and fully renovated in
+                                    2026. Every unit features high-end appliances, modern finishes, and all-new
+                                    interiors designed for contemporary island living.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q4">What nearby landmarks, employers, or
+                                    schools is it close to?</button></h2>
+                            <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>The Landing is ideally located near some of Galveston’s most important
+                                        institutions and destinations. The community sits within walking distance or a
+                                        short bike ride of UTMB, providing convenient access to its medical campus,
+                                        hospital, and academic facilities. Galveston College and Texas A&M University at
+                                        Galveston are also easily accessible, making The Landing a practical home base
+                                        for students, faculty, and professionals alike.</p>
+                                    <p>Beyond work and school, residents are just minutes from Downtown Galveston and
+                                        the historic The Strand Historic District, where local dining, cafés, shops, and
+                                        year-round events bring the island’s culture to life. The nearby East End
+                                        Historic District offers charming streets and a relaxed coastal atmosphere,
+                                        while the Port of Galveston adds energy and activity as one of Texas’ busiest
+                                        cruise destinations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q5">Is the community smoke-free?</button>
+                            </h2>
+                            <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">The Landing is a smoke-free community to promote a clean,
+                                    healthy, and comfortable living environment for all residents. Smoking is not
+                                    permitted inside apartments or in common indoor areas. Designated outdoor smoking
+                                    areas are provided and must be used at all times.</div>
+                            </div>
+                        </div>
+
+                        <!-- Application & Lease -->
+                        <div class="faq-category">
+                            <h3>Application Process & Leasing</h3>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q6">How do I apply for an
+                                    apartment?</button></h2>
+                            <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Getting started is easy. Simply click on the “Available Apartments” section and
+                                        select the apartment you’d like to book. From there, you’ll be guided through
+                                        our secure, fully online leasing process step by step.</p>
+                                    <p>Once your application is submitted, we’ll review it with you and confirm leasing
+                                        terms and pricing. Credit and background checks are completed online, and if
+                                        approved, your lease is sent electronically for signature. Payments and required
+                                        documents are also handled through the same platform—no paperwork and no
+                                        in-person visits required. In many cases, the entire process—from selecting an
+                                        apartment to signing the lease and being ready to move in—can be completed in
+                                        the same day.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q7">What lease terms are
+                                    offered (6, 9, 12 months)?</button></h2>
+                            <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">The Landing is primarily a community for long-term
+                                    residents, and our standard lease terms are designed to support stability and a
+                                    strong residential environment. That said, we understand that individual
+                                    circumstances can vary. On a case-by-case basis, and depending on seasonality and
+                                    availability, we may consider shorter-term leases. Lease terms shorter than 12
+                                    months may be subject to different rental rates and additional fees. Our team is
+                                    happy to discuss available options and help determine the best fit based on your
+                                    specific needs.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q8">Is there an application fee?</button>
+                            </h2>
+                            <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Each application is subject to a $25 application fee and a
+                                    $40 credit and background screening fee, both required for every applicant. These
+                                    fees are applied consistently and uniformly and are processed securely online as
+                                    part of the application process.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q9">What documents are required to
+                                    apply?</button></h2>
+                            <div id="q9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">As part of the application process, each applicant is
+                                    required to upload a valid government-issued photo ID, two most recent pay stubs,
+                                    and bank records, as requested during screening. These requirements are applied
+                                    consistently to all applicants as part of our standard review process. If an
+                                    applicant does not have the required documentation, alternative options may be
+                                    considered on a case-by-case basis, subject to verification and approval.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q10">How long does the approval process
+                                    take?</button></h2>
+                            <div id="q10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Approval typically takes 24-48 hours after all documents
+                                    have been submitted.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q11">Do you accept roommates or co-living
+                                    arrangements?</button></h2>
+                            <div id="q11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Roommates are welcome at The Landing. Each adult occupant is
+                                    required to submit a separate application and complete the same screening process,
+                                    which is applied consistently to all applicants. Maximum occupancy limits may apply
+                                    and can vary by apartment type and layout.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q12">Do you accept housing vouchers
+                                    (Section 8)?</button></h2>
+                            <div id="q12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Satori Property Management has a well-established working
+                                    relationship with the local housing authority and accepts housing vouchers at
+                                    qualifying communities, including The Landing. Voucher applications are reviewed in
+                                    accordance with program guidelines and our standard screening procedures, which are
+                                    applied consistently to all applicants. Our management team is familiar with the
+                                    required documentation and inspection processes and is happy to coordinate directly
+                                    with Galveston Housing Authority to help ensure a smooth and efficient leasing
+                                    experience.</div>
+                            </div>
+                        </div>
+
+                        <!-- Rent & Fees -->
+                        <div class="faq-category">
+                            <h3>Rent, Utilities & Fees</h3>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q13">What is included in the
+                                    rent?</button></h2>
+                            <div id="q13" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Utility inclusions depend on your lease type. For our
+                                    medical and corporate housing partnerships, utilities and high-speed internet are
+                                    included in the monthly rent. For standard residential leases, please contact the
+                                    office for specific utility details.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q14">What utilities are tenant-paid vs.
+                                    owner-paid?</button></h2>
+                            <div id="q14" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Generally, medical and corporate residents enjoy an
+                                    all-inclusive utility package. Standard lease residents are typically responsible
+                                    for their own electricity and water.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q15">Is there a utility package or
+                                    flat-rate option?</button></h2>
+                            <div id="q15" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, we offer utility packages for ease of billing. Ask our
+                                    team for details.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q16">Is a security deposit
+                                    required?</button></h2>
+                            <div id="q16" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, a refundable security deposit is required upon lease
+                                    signing.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q17">Are move-in specials
+                                    available?</button></h2>
+                            <div id="q17" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">We often have specials! Check our home page or contact us
+                                    for current offers.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q18">Are there late fees or NSF
+                                    fees?</button></h2>
+                            <div id="q18" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, late fees apply if rent is not received by the due
+                                    date. NSF fees apply for returned payments.</div>
+                            </div>
+                        </div>
+
+                        <!-- Pet Policy -->
+                        <div class="faq-category">
+                            <h3>Pet Policy</h3>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q19">Are pets allowed?</button></h2>
+                            <div id="q19" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, we are a pet-friendly community!</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q20">Is there a pet deposit or monthly
+                                    pet rent?</button></h2>
+                            <div id="q20" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">A pet deposit and a small monthly pet rent apply per pet.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q21">Are there breed or weight
+                                    restrictions?</button></h2>
+                            <div id="q21" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Some breed restrictions apply. Weight limits are generous.
+                                    Please consult the leasing office.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q22">How are service animals and ESAs
+                                    handled?</button></h2>
+                            <div id="q22" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">We comply fully with fair housing laws regarding service
+                                    animals and ESAs with proper documentation.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q23">Are there pet amenities?</button>
+                            </h2>
+                            <div id="q23" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, we feature a dog park and pet wash station for your
+                                    furry friends.</div>
+                            </div>
+                        </div>
+
+                        <!-- Features & Amenities -->
+                        <div class="faq-category">
+                            <h3>Features & Amenities</h3>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q24">Are apartments furnished or
+                                    unfurnished?</button></h2>
+                            <div id="q24" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Apartments at The Landing may be available furnished or
+                                    unfurnished, depending on availability at the time of leasing. Please contact our
+                                    team to confirm current options and pricing.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q25">Can furniture be removed if not
+                                    needed?</button></h2>
+                            <div id="q25" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Furniture in furnished apartments may be removed depending
+                                    on availability and the specific unit type. For special requests or specific needs,
+                                    please contact management to discuss available options.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q26">What appliances are
+                                    included?</button></h2>
+                            <div id="q26" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Each apartment is equipped with an independent air
+                                    conditioning unit, a stovetop, and a combined oven, grill, and microwave, along with
+                                    a full-size refrigerator and freezer combination—providing everything you need for
+                                    comfortable, modern living.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q27">Is in-unit washer/dryer
+                                    included?</button></h2>
+                            <div id="q27" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Selected units have in-unit connections or machines. We also
+                                    have an on-site laundry facility.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q28">Do units have balconies, patios, or
+                                    yard access?</button></h2>
+                            <div id="q28" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Individual apartments do not feature private balconies.
+                                    However, all residents have full access to the shared outdoor areas throughout the
+                                    community. The property offers generous open space between buildings, creating
+                                    inviting outdoor areas where residents can relax, gather, and enjoy fresh air.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q29">Is internet included or
+                                    available?</button></h2>
+                            <div id="q29" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">High-speed internet is available. It is included in
+                                    corporate/medical housing packages.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q30">What amenities are
+                                    available?</button></h2>
+                            <div id="q30" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Residents enjoy access to a pool, gym, study rooms, gaming
+                                    room, and community kitchen.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q31">Are amenities open 24/7?</button>
+                            </h2>
+                            <div id="q31" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Most amenities like the gym and study rooms are accessible
+                                    24/7 with keycard access.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q32">Are guests allowed to use
+                                    amenities?</button></h2>
+                            <div id="q32" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, guests are welcome when accompanied by a resident.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q33">Is parking included or
+                                    assigned?</button></h2>
+                            <div id="q33" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">We offer ample on-site parking for residents.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q34">Is there bike storage or EV
+                                    charging?</button></h2>
+                            <div id="q34" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">We have bike racks available. EV charging plans are in
+                                    development.</div>
+                            </div>
+                        </div>
+
+                        <!-- Maintenance & Management -->
+                        <div class="faq-category">
+                            <h3>Maintenance & Management</h3>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q35">How do I submit a maintenance
+                                    request?</button></h2>
+                            <div id="q35" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">You can submit requests easily through our online resident
+                                    portal.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q36">Is emergency maintenance
+                                    available?</button></h2>
+                            <div id="q36" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, we have 24/7 emergency maintenance for urgent issues.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q37">How quickly are requests
+                                    handled?</button></h2>
+                            <div id="q37" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Routine requests are typically addressed within 24-48 hours.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q38">Is management on-site or
+                                    local?</button></h2>
+                            <div id="q38" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, we are a local company with a management team based in
+                                    Galveston.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q39">Are after-hours issues
+                                    handled?</button></h2>
+                            <div id="q39" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Our after-hours answering service ensures emergencies are
+                                    routed immediately.</div>
+                            </div>
+                        </div>
+
+                        <!-- Move-in / Move-out -->
+                        <div class="faq-category">
+                            <h3>Move-in / Move-out</h3>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q40">When can I move in?</button></h2>
+                            <div id="q40" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Move-in can be scheduled as soon as your application is
+                                    approved and the lease is signed.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q41">Is renter’s insurance
+                                    required?</button></h2>
+                            <div id="q41" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, all residents must maintain an active renter’s
+                                    insurance policy.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q42">What is the move-out notice
+                                    requirement?</button></h2>
+                            <div id="q42" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">We require a standard 60-day notice before moving out.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q43">How are move-out inspections
+                                    handled?</button></h2>
+                            <div id="q43" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">We conduct a walkthrough with you to assess condition and
+                                    any necessary repairs.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q44">When is the security deposit
+                                    returned?</button></h2>
+                            <div id="q44" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Deposits are returned within 30 days of lease end, minus any
+                                    lawful deductions.</div>
+                            </div>
+                        </div>
+
+                        <!-- Living Rules -->
+                        <div class="faq-category">
+                            <h3>Community Living & Rules</h3>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q45">What is the guest policy?</button>
+                            </h2>
+                            <div id="q45" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Guests are welcome but must adhere to community rules.
+                                    Extended stays require management approval.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q46">Is subleasing allowed?</button></h2>
+                            <div id="q46" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Subleasing is generally not permitted without prior written
+                                    consent from management.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q47">Are short-term leases
+                                    permitted?</button></h2>
+                            <div id="q47" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, we offer specific short-term lease options for
+                                    corporate and medical housing.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q48">What are quiet hours?</button></h2>
+                            <div id="q48" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Quiet hours are typically from 10 PM to 7 AM to ensure a
+                                    peaceful environment.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q49">Are grills, smoking, or candles
+                                    allowed?</button></h2>
+                            <div id="q49" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Grills are only allowed in designated areas. Smoking and
+                                    open candles are restricted in units.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q50">What is the package delivery
+                                    policy?</button></h2>
+                            <div id="q50" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Packages are delivered to the secure mail area or leasing
+                                    office.</div>
+                            </div>
+                        </div>
+
+                        <!-- Tours & Contact -->
+                        <div class="faq-category">
+                            <h3>Tours & Contact</h3>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q51">How do I schedule a tour?</button>
+                            </h2>
+                            <div id="q51" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">You can schedule a tour online or by calling us at +1 281
+                                    407 1886.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q52">Do you offer virtual or self-guided
+                                    tours?</button></h2>
+                            <div id="q52" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, we offer FaceTime or Zoom tours for remote applicants.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q53">What are office hours?</button></h2>
+                            <div id="q53" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Weekday hours: 8 AM - 5 PM. Saturday: 10 AM - 5 PM. Sunday:
+                                    Closed.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q54">How do I contact
+                                    management?</button></h2>
+                            <div id="q54" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">You can reach our team by emailing Tohmeprop@gmail.com or by
+                                    calling our office line at +1 281 407 1886.</div>
+                            </div>
+                        </div>
+
+                        <!-- Special Programs -->
+                        <div class="faq-category">
+                            <h3>Special Programs</h3>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#program1">Do you offer UTMB or employer
+                                    discounts?</button></h2>
+                            <div id="program1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, we have preferred employer discounts for UTMB staff and
+                                    other local partners.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#program2">Do you offer master leases or
+                                    bulk unit leasing?</button></h2>
+                            <div id="program2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, we specialize in corporate master leases. Please
+                                    contact management to discuss.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#program3">Are short-term or semester
+                                    leases available?</button></h2>
+                            <div id="program3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, semester-based leases are available for students and
+                                    faculty.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Sidebar -->
+    <div class="contact-sidebar-overlay" onclick="toggleContactSidebar()"></div>
+    <div class="contact-sidebar" id="contactSidebar">
+        <div class="sidebar-header">
+            <h5>Get in Touch</h5>
+            <p>We're here to help you find your perfect home in Galveston.</p>
+            <button class="sidebar-close-btn" onclick="toggleContactSidebar()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="sidebar-content">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Phone</h6>
+                    <a href="tel:+12814071886">+1 281 407 1886</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Email</h6>
+                    <a href="mailto:Tohmeprop@gmail.com">Tohmeprop@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Address</h6>
+                    <span>622 Kempner Street, Suite 236<br>Galveston, TX 77550</span>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Office Hours</h6>
+                    <span>Mon-Fri: 8 AM - 5 PM<br>Saturday: 10 AM - 5 PM<br>Sunday: Closed</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-actions">
+            <a href="tel:+12814071886" class="btn btn-luxury w-100">
+                <i class="fas fa-phone me-2"></i> Call Now
+            </a>
+            <a href="contact.html" class="btn btn-outline-secondary w-100">
+                <i class="fas fa-envelope me-2"></i> Send Message
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pe-lg-5">
+                        <h5 class="mb-4">Satory Properties</h5>
+                        <p class="mb-4">Redefining luxury property management in Galveston. We combine modern aesthetics
+                            with personalized service to create exceptional living experiences.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-link-group">
+                        <li><a href="galveston.html"><i class="fas fa-chevron-right"></i>Why Galveston</a></li>
+                        <li><a href="housing.html"><i class="fas fa-chevron-right"></i>Housing Options</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+                        <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Office Address</h5>
+                    <ul class="footer-link-group">
+                        <li>
+                            <p class="m-0"><i class="fas fa-map-marker-alt"></i> 622 Kempner Street, Suite 236</p>
+                            <p class="ms-4 text-white-50">Galveston, TX 77550</p>
+                        </li>
+                        <li>
+                            <p class="m-0"><i class="fas fa-clock"></i> Mon - Fri: 8AM - 5PM</p>
+                            <p class="ms-4 text-white-50">Sat: 10AM - 5PM</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Get in Touch</h5>
+                    <ul class="footer-link-group">
+                        <li>
+                            <a href="tel:+12814071886" class="d-flex align-items-center mb-3">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+1 281 407 1886</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:Tohmeprop@gmail.com" class="d-flex align-items-center">
+                                <i class="fas fa-envelope"></i>
+                                <span>Tohmeprop@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="m-0">&copy; 2026 Satory Property Management. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-legal-links text-white-50">
+                            <a href="legal.html" class="ms-3">Privacy Policy</a>
+                            <span class="mx-2">|</span>
+                            <a href="legal.html">Disclaimer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Simple search functionality for FAQ
+        document.getElementById('faqSearch').addEventListener('keyup', function () {
+            var searchText = this.value.toLowerCase();
+            var accordionItems = document.querySelectorAll('.accordion-item');
+
+            accordionItems.forEach(function (item) {
+                var headerText = item.querySelector('.accordion-button').textContent.toLowerCase();
+                var bodyText = item.querySelector('.accordion-body').textContent.toLowerCase();
+
+                if (headerText.includes(searchText) || bodyText.includes(searchText)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

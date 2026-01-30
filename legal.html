@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal | Satory Property Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SATORY <span class="text-gold">PROPERTIES</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="galveston.html">Why Galveston</a></li>
+                    <li class="nav-item"><a class="nav-link" href="housing.html">Housing Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#apartments">Available Units</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item me-3 d-none d-lg-block">
+                        <a href="tel:+12814071886" class="nav-link fw-bold text-gold">
+                            <i class="fas fa-phone-alt me-1"></i> +1 281 407 1886
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <button class="contact-btn" onclick="toggleContactSidebar()">
+                            Contact Info
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary-dark text-white text-center pb-4" style="padding-top: 100px;">
+        <div class="container py-4">
+            <h1 class="display-5 mb-3">Legal Information</h1>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <h3 class="mb-3">Privacy Policy</h3>
+            <p class="mb-5">At Satory Property Management, we value your privacy. This policy outlines how we collect,
+                use, and protect your personal information...</p>
+
+            <h3 class="mb-3">Disclaimer</h3>
+            <p class="mb-5">The information provided on this website is for general informational purposes only. All
+                information on the site is provided in good faith...</p>
+
+            <h3 class="mb-3">Accessibility</h3>
+            <p class="mb-5">We are committed to making our website accessible to everyone, including individuals with
+                disabilities. We are continuously working to improve the user experience for everyone...</p>
+        </div>
+    </section>
+
+    <!-- Contact Sidebar -->
+    <div class="contact-sidebar-overlay" onclick="toggleContactSidebar()"></div>
+    <div class="contact-sidebar" id="contactSidebar">
+        <div class="sidebar-header">
+            <h5>Get in Touch</h5>
+            <p>We're here to help you find your perfect home in Galveston.</p>
+            <button class="sidebar-close-btn" onclick="toggleContactSidebar()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="sidebar-content">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Phone</h6>
+                    <a href="tel:+12814071886">+1 281 407 1886</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Email</h6>
+                    <a href="mailto:Tohmeprop@gmail.com">Tohmeprop@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Address</h6>
+                    <span>622 Kempner Street, Suite 236<br>Galveston, TX 77550</span>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-details">
+                    <h6>Office Hours</h6>
+                    <span>Mon-Fri: 8 AM - 5 PM<br>Saturday: 10 AM - 5 PM<br>Sunday: Closed</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-actions">
+            <a href="tel:+12814071886" class="btn btn-luxury w-100">
+                <i class="fas fa-phone me-2"></i> Call Now
+            </a>
+            <a href="contact.html" class="btn btn-outline-secondary w-100">
+                <i class="fas fa-envelope me-2"></i> Send Message
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pe-lg-5">
+                        <h5 class="mb-4">Satory Properties</h5>
+                        <p class="mb-4">Redefining luxury property management in Galveston. We combine modern aesthetics
+                            with personalized service to create exceptional living experiences.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-link-group">
+                        <li><a href="galveston.html"><i class="fas fa-chevron-right"></i>Why Galveston</a></li>
+                        <li><a href="housing.html"><i class="fas fa-chevron-right"></i>Housing Options</a></li>
+                        <li><a href="faq.html"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+                        <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Office Address</h5>
+                    <ul class="footer-link-group">
+                        <li>
+                            <p class="m-0"><i class="fas fa-map-marker-alt"></i> 622 Kempner Street, Suite 236</p>
+                            <p class="ms-4 text-white-50">Galveston, TX 77550</p>
+                        </li>
+                        <li>
+                            <p class="m-0"><i class="fas fa-clock"></i> Mon - Fri: 8AM - 5PM</p>
+                            <p class="ms-4 text-white-50">Sat: 10AM - 5PM</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Get in Touch</h5>
+                    <ul class="footer-link-group">
+                        <li>
+                            <a href="tel:+12814071886" class="d-flex align-items-center mb-3">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+1 281 407 1886</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:Tohmeprop@gmail.com" class="d-flex align-items-center">
+                                <i class="fas fa-envelope"></i>
+                                <span>Tohmeprop@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="m-0">&copy; 2026 Satory Property Management. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-legal-links text-white-50">
+                            <a href="legal.html" class="ms-3">Privacy Policy</a>
+                            <span class="mx-2">|</span>
+                            <a href="legal.html">Disclaimer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
