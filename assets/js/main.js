@@ -134,21 +134,66 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {
-        form.addEventListener('submit', function (e) {
+        form.addEventListener('submit', async function (e) {
             e.preventDefault();
-            // Mock submission
+
             const btn = form.querySelector('button[type="submit"]');
             const originalText = btn.innerHTML;
 
+            // UI Feedback - Start
             btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             btn.disabled = true;
 
-            setTimeout(() => {
-                alert('Thank you! Your message has been sent successfully.');
-                form.reset();
+            // Remove any previous alerts
+            const existingAlert = form.querySelector('.form-alert');
+            if (existingAlert) existingAlert.remove();
+
+            const data = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Success
+                    const successAlert = document.createElement('div');
+                    successAlert.className = 'alert alert-success mt-3 form-alert';
+                    successAlert.textContent = 'Thank you! Your message has been sent successfully.';
+                    form.appendChild(successAlert);
+                    form.reset();
+
+                    setTimeout(() => {
+                        successAlert.remove();
+                    }, 5000);
+                } else {
+                    // Error from server
+                    const result = await response.json();
+                    const errorAlert = document.createElement('div');
+                    errorAlert.className = 'alert alert-danger mt-3 form-alert';
+
+                    if (Object.hasOwn(result, 'errors')) {
+                        errorAlert.textContent = result.errors.map(error => error["message"]).join(", ");
+                    } else {
+                        errorAlert.textContent = 'Oops! There was a problem submitting your form.';
+                    }
+                    form.appendChild(errorAlert);
+                }
+            } catch (error) {
+                // Network error
+                const errorAlert = document.createElement('div');
+                errorAlert.className = 'alert alert-danger mt-3 form-alert';
+                errorAlert.textContent = 'Oops! There was a problem submitting your form. Please try again.';
+                form.appendChild(errorAlert);
+            } finally {
+                // Restore button
                 btn.innerHTML = originalText;
                 btn.disabled = false;
-            }, 1500);
+            }
         });
     });
 });

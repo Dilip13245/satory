@@ -56,34 +56,36 @@
                     <div class="card border-0 shadow-lg">
                         <div class="card-body p-5">
                             <h3 class="mb-4">Send us a Message</h3>
-                            <form>
+                            <form action="https://formspree.io/f/xqebjojy" method="POST">
                                 <div class="row g-3">
                                     <div class="col-md-12">
                                         <label class="form-label">Full Name *</label>
-                                        <input type="text" class="form-control" placeholder="Enter your full name"
-                                            required>
+                                        <input type="text" name="name" class="form-control"
+                                            placeholder="Enter your full name" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Email Address *</label>
-                                        <input type="email" class="form-control" placeholder="email@example.com"
-                                            required>
+                                        <input type="email" name="email" class="form-control"
+                                            placeholder="email@example.com" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Phone Number *</label>
-                                        <input type="tel" class="form-control" placeholder="+1 (___) ___-____" required>
+                                        <input type="tel" name="phone" class="form-control"
+                                            placeholder="+1 (___) ___-____" required>
                                     </div>
                                     <div class="col-12">
                                         <label class="form-label">Desired Move-in Date</label>
-                                        <input type="date" class="form-control">
+                                        <input type="date" name="move_in_date" class="form-control">
                                     </div>
                                     <div class="col-12">
                                         <label class="form-label">How can we help? *</label>
-                                        <textarea class="form-control" rows="4"
+                                        <textarea name="message" class="form-control" rows="4"
                                             placeholder="Tell us about your housing needs..." required></textarea>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-check mb-3">
-                                            <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                            <input class="form-check-input" type="checkbox" name="agreed_to_terms"
+                                                id="termsCheck" required>
                                             <label class="form-check-label small text-muted" for="termsCheck">
                                                 I agree to receive communications from Satory Properties. We will follow
                                                 up with you shortly.
@@ -257,10 +259,10 @@
                         <p class="mb-4">Redefining luxury property management in Galveston. We combine modern aesthetics
                             with personalized service to create exceptional living experiences.</p>
                         <div class="social-icons">
-                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61566535884613" class="social-icon"
+                                target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/satoripropertymgmt/" class="social-icon"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
